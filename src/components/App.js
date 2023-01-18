@@ -1,5 +1,3 @@
-
-import React, { useState } from "react";
 import React, { useEffect, useState } from "react";
 import AdminNavBar from "./AdminNavBar";
 import QuestionForm from "./QuestionForm";
@@ -49,3 +47,5 @@ function App() {
     </main>
   );
 }
+
+export default App

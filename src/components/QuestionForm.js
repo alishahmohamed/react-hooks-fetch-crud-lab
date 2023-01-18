@@ -1,10 +1,8 @@
-function handleSubmit(event) {
+function handleSubmit(event,props) {
   event.preventDefault();
   // console.log(formData);
   const newQuestion = {
-    prompt: formData.prompt,
-    answers: [formData.answer1, formData.answer2, formData.answer3, formData.answer4],
-    correctIndex: parseInt(formData.correctIndex),
+   
   };
   fetch("http://localhost:4000/questions", {
     method: "POST",
@@ -23,5 +21,3 @@ function handleSubmit(event) {
 
 
 }
-
-return 

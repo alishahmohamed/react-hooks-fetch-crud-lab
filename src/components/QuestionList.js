@@ -6,7 +6,7 @@ function QuestionList({questions,handeDelete}) {
     <section>
       <h1>Quiz Questions</h1>
       <ul>
-        {questions.map((question) => (
+        {questions?.map((question) => (
           <QuestionItem key={question.id} question={question} handleDelete={handeDelete}/>
         ))}
 
